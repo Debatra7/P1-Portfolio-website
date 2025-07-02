@@ -710,7 +710,6 @@ height: 100%;
 }
 
 .achievement-card ul {
-  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -725,31 +724,23 @@ height: 100%;
   transition: all 0.3s ease;
 }
 
-.achievement-card li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: var(--senary-color);
-  font-weight: bold;
-}
-
 .achievement-card:hover li {
   transform: translateX(5px);
   color: rgba(255, 255, 255, 0.95);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .skills-achievements-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-  
-  #skills-achievements h1 {
-    font-size: 2.2rem;
-  }
-  
-  #skills-achievements .subtitle {
-    font-size: 1rem;
-  }
+
+/* Footer */
+footer {
+  background-color: rgba(8, 27, 41, 0.9);
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 2rem;
+}
+
+.footer-container p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  margin: 0;
+  padding: 1rem;
 }
